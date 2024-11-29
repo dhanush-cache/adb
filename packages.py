@@ -19,7 +19,7 @@ uninstall = [
     "com.facebook.services",
     "com.facebook.system",
     "com.google.android.projection.gearhead",
-    "com.google.android.youtube"
+    "com.google.android.youtube",
     "com.hiya.star",
     "com.microsoft.skydrive",
     "com.mygalaxy",
@@ -47,7 +47,7 @@ uninstall = [
     "com.sec.android.easyMover.Agent",
     "com.sec.android.easyMover",
     "com.sec.android.mimage.avatarstickers",
-    "com.android.chrome"
+    "com.android.chrome",
 ]
 
 install = list(source.rglob("*.apk"))

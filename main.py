@@ -1,7 +1,7 @@
 from pathlib import Path
 
 import adb
-from packages import install, uninstall, disable
+from packages import disable, install, uninstall
 
 # Connect
 if not adb.is_connected():
@@ -28,7 +28,7 @@ for package in disable:
         print("Done!")
 
 # Uninstall
-target = Path("/sdcard/sapps")
+target = Path.home() / "sapps"
 target.mkdir(parents=True, exist_ok=True)
 for package in uninstall:
     if not adb.is_installed(package):
